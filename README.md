@@ -1,13 +1,13 @@
 # yarn-plugin-prune-prod
 
-Update `.pnp.cjs` and the `cache` folder to remove `devDependencies` in Yarn 3.
+Remove `devDependencies` from `.pnp.cjs` and the `cache` folder in Yarn 3.
 
 Intended to assist with building smaller, more stable docker images that are consistent between environments by leveraging Yarn's [Zero Install](https://yarnpkg.com/features/zero-installs) feature.
 
 ### Installation
 
 ```bash
-yarn plugin import https://github.com/troncali/nest-vue/blob/main/src/docker/backend.Dockerfile
+yarn plugin import https://raw.githubusercontent.com/troncali/yarn-prune-prod/main/bundles/%40yarnpkg/plugin-prune-prod.js
 ```
 
 ### Command
